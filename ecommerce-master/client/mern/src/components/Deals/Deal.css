@@ -1,0 +1,101 @@
+.product__coupon-item {
+    padding: 20px;
+    border: 1px solid #eaeaef;
+}
+.p-relative {
+    position: relative;
+}
+.product__coupon-border {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 35%;
+    display: inline-block;
+    width: 2px;
+    height: 100%;
+    background-color: transparent;
+    border-left: 2px dashed #eaeaef;
+    z-index: 1;
+}
+.product__coupon-item-left {
+    flex: 0 0 68%;
+}
+.product__coupon-title {
+    font-size: 20px;
+    margin-bottom: 3px;
+}
+.product__coupon-offer {
+    font-size: 18px;
+    font-weight: 600;
+    
+}
+.product__coupon-offer span{
+    color: red;
+}
+.mb-15 {
+    margin-bottom: 15px;
+}
+
+
+.product__coupon-item-right {
+    flex: 0 0 32%;
+}
+.pl-20 {
+    padding-left: 20px;
+}
+.mb-10 {
+    margin-bottom: 10px;
+}
+.product__coupon-countdown ul {
+    color: gray;
+    list-style: none;
+    padding: 0;
+    min-width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+.product__coupon-countdown ul li {
+    margin: 0;
+    padding: 0 5px;
+    position: relative;
+}
+
+.product__coupon-countdown ul li::before {
+    content: "";
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: #eaeaef;
+    border-left: 2px dashed gray;
+}
+
+@media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px){
+.product__coupon-border {
+    right: 0%;
+}
+}
+button:disabled {
+    cursor: not-allowed;
+  }  
+.product__coupon-date button {
+    background-color: rgba(0,128,128,.1);
+    border: 2px dashed rgba(0,128,128,.4);
+    padding: 6px 5px;
+    font-size: 15px;
+    color: teal;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.product__coupon-status{
+    display: flex;
+    justify-content: center;
+  
+  margin-top: 5px;
+    font-size: 16px !important;
+    text-align: center !important;
+    color: gray;
+}

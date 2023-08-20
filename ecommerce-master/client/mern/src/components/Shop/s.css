@@ -1,0 +1,53 @@
+.shoppy{
+    padding: 15px 20px 15px 30px;
+    border: 1px solid rgba(3,4,28,.1);
+}
+.shop{
+    overflow: hidden;
+}
+.shoppy_conatiner{
+    width: 100%;
+    overflow:hidden;
+    height: 100%;
+}
+.shoppy_row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-gap: 30px;
+}
+.cc{
+   display: flex;
+   justify-content: end;
+}
+.cc select{
+    width: 50%;
+}
+@media (max-width : 750px) {
+    .cc select{
+        width: 100%;
+    }
+    .shoppy_col p{
+        font-size: 15px;
+        margin-left: 5px;
+    }
+}
+.page_button{
+    margin-top: 80px;
+    padding: 10px 20px;
+    font-weight: bold;
+  border: 1px solid rgba(3,4,28,.1);
+}
+.p_active{
+    transition: .5s ease-in-out;
+    background-color: #f50963;
+    color: white;
+}
+.top_row img{
+    height: 300px;
+
+}
+.top_col{
+    text-align: center;
+    font-family: "Space Grotesk",sans-serif;
+
+}

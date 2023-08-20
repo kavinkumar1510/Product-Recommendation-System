@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    width:500px;
+    min-width: 350px;
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 19px );
+    -webkit-backdrop-filter: blur( 19px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}.login_btn{
+    width: 100%;
+    height: 50px;
+    background-color: #f50963;
+    border: none;
+    color: white;
+    font-size: 20px;
+    letter-spacing: .7px;
+    transition: all .3s ease-in;
+}
+.login_btn:hover{
+    background-color: black;
+}
+.t{
+    font-family: "Space Grotesk",sans-serif;
+}

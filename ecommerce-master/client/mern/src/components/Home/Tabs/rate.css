@@ -1,0 +1,86 @@
+.pot{
+    overflow: hidden;
+}
+  .top_container {
+    width: 100%;
+    /* Add other styles for the container */
+  }
+  
+  .top_row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+  }
+  
+  .top_col {
+    /* Add styles for individual columns */
+    position: relative; /* Create a positioning context for absolute elements */
+    cursor: pointer;
+  }
+  
+  .top_col img {
+    width: 100%;
+    height: auto;
+    /* Add styles for the image */
+  }
+  
+  .add-to-cart-button {
+    position: relative;
+    width: 100%;
+    bottom: 30px; /* Adjust this value to control the spacing between the content and the button */
+    left: 0;
+    padding: 8px 16px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 1;
+  }
+  
+  .top_col:hover .add-to-cart-button {
+    opacity: 1;
+    bottom: 30px; /* Adjust this value for proper spacing */
+  }
+  .add-to-cart-button:hover{
+    transition: 0.3s ease-in-out; 
+   background-color: #f50963;
+  }
+ 
+  .buttons-container {
+    position: absolute;
+    top: 23%;
+    right: -70px; /* Start the container off-screen to the right */
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, right 0.3s ease-in-out; /* Add a transition for right property */
+  }
+  
+  .top_col:hover .buttons-container {
+    opacity: 1;
+    right: 10px; /* Slide the container in from the right */
+  }
+  
+  .action-button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: white;
+    color: #050404;
+    border: none;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+  }
+  .action-button:hover{
+    background-color: #f50963;
+    color: white;
+  }
+  .top_col img:hover{
+    transition: .3s ease-in-out;
+    scale :1.1;
+  }
